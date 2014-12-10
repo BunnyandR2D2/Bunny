@@ -1,1 +1,32 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="112" inline="false" x="196" y="56">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="119">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="160" inline="false">
+        <value name="IF0">
+          <block type="logic_compare" id="184" inline="true">
+            <field name="OP">GT</field>
+            <value name="A">
+              <block type="math_number" id="196">
+                <field name="NUM">60</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="sensor_object" id="203">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_right" id="213"></block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
