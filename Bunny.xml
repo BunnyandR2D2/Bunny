@@ -24,7 +24,13 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_right" id="213"></block>
+          <block type="movement_right" id="213">
+            <next>
+              <block type="oled_color" id="222">
+                <field name="OBJECT">BLACK</field>
+              </block>
+            </next>
+          </block>
         </statement>
       </block>
     </statement>
